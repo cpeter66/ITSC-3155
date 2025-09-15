@@ -64,7 +64,7 @@ class SandwichMachine:
         return total_coins
 
         """Returns the total calculated from coins inserted.
-           Hint: include input() function here, e.g. input("how many quarters?: ")"""
+           Hint: include input() function here, e.g. input("how many quarters?: ") User input section had to look at doucmentation"""
 
     def transaction_result(self, coins, cost):
         if coins < cost:
