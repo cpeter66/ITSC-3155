@@ -85,7 +85,7 @@ class SandwichMachine:
         """Deduct the required ingredients from the resources.
            Hint: no output"""
         for items, amount in order_ingredients.items():
-            self.machine_resources[items] -= amount
+            self.machine_resources[items] -= amount    ##removing ingredients
 
     def report(self):
         print(f"Current resources: Bread: {self.machine_resources['bread']}, "
