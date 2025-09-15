@@ -90,7 +90,7 @@ class SandwichMachine:
     def report(self):
         print(f"Current resources: Bread: {self.machine_resources['bread']}, "
               f"Ham: {self.machine_resources['ham']}, "
-              f"Cheese: {self.machine_resources['cheese']}")
+              f"Cheese: {self.machine_resources['cheese']}")  ###Fixing report functionality
 
 
 ### Make an instance of SandwichMachine class and write the rest of the codes ###
