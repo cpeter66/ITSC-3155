@@ -1,5 +1,8 @@
+import random
 class BankAccount:
     bankName = "Wells Fargo of America"
+    _accountNumber = random.randrange(1000, 9999)
+    __routingNumber = random.randrange(1000, 9999)
 
     def __init__(self, customer_name, current_balance, minimum_balance):
         self.customer_name = customer_name
