@@ -1,0 +1,10 @@
+
+print("Calculator")
+a = float(input("Enter number: "))
+b = float(input("Enter number: "))
+print("Adding numbers now...")
+print("Sum is:", a+b)
+print("Subtracting numbers now...")
+print("Difference is:", a-b)
+print("Multiplying numbers now...")
+print("Product is:", a*b)
