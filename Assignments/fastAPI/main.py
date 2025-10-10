@@ -1,8 +1,11 @@
 from fastapi import FastAPI
-from typing import Union
 
 app = FastAPI()
 
 @app.get("/")
-def read_root():
-    return {"Hello": "World"}
+async def root():
+    return {"message": "Hello World"}
+
+@app.post("/")
+async def post():
+    return {"message": "Hello from the post route "}
