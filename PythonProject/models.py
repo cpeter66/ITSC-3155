@@ -10,3 +10,15 @@ class Todo(Base):
     due_day = Column(Integer)
     due_month = Column(String(10))
     due_year = Column(Integer)
+    user_id = Column(Integer, ForeignKey("user.id"))
+
+    user = relationship("User", back_populates="todos")
+
+class User(Base):
+    __tablename__ = "user"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String(100))
+    age = Column(Integer)
+    gender = Column(String(10))
+
+    todos = relationship(argument="Todo", back_populates="user")
